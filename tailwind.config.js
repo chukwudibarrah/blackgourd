@@ -12,9 +12,9 @@ export default {
         engviolet: "#BA7BA1",
       },
       backgroundImage: {
-        'desktop': "url('/web.webp')",
-        'mobile': "url('/mobile.webp')",
-        'tab': "url('/tab.webp')",
+        'desktop': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/web.webp')",
+        'mobile': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/mobile.webp')",
+        'tab': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/tab.webp')",
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',

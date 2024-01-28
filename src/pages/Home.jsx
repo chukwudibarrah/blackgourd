@@ -97,7 +97,7 @@ export default function Home() {
               </h2>
               <div className="">
                 <img
-                  src="/webdev.webp"
+                  src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/webdev.webp"
                   alt="Web Development"
                   className="w-60 lg:w-[30rem] xl:w-[20rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-3xl"
                 />
