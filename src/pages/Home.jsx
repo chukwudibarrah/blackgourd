@@ -97,7 +97,7 @@ export default function Home() {
               </h2>
               <div className="">
                 <img
-                  src="https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/webdev.webp"
+                  src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/webdev.webp"
                   alt="Web Development"
                   className="lg:xl:w-[38rem] xl:w-[40rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-3xl"
                 />
@@ -127,7 +127,7 @@ export default function Home() {
               </h2>
               <div className="">
                 <img
-                  src="https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/rediting.webp"
+                  src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/rediting.webp"
                   alt="Editing & Copywriting"
                   className="xl:w-[35rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2"
                 />

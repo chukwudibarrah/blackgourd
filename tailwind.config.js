@@ -12,9 +12,9 @@ export default {
         engviolet: "#BA7BA1",
       },
       backgroundImage: {
-        'aboutImage': "url('https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/desktop.webp')",
-        'aboutMobile': "url('https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/mobile.webp')",
-        'aboutTab': "url('https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/tab.webp')",
+        'aboutImage': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/desktop.webp')",
+        'aboutMobile': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/mobile.webp')",
+        'aboutTab': "url('https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/tab.webp')",
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',

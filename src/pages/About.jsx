@@ -64,7 +64,7 @@ export default function About() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                src="https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/wudiweber-hands.webp"
+                src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/wudiweber-hands.webp"
                 alt="team image"
                 className="shadow-xl hover:shadow-2xl"
               />
@@ -103,7 +103,7 @@ export default function About() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 40 }}
-                src="https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/about-wudiweber-team.webp"
+                src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/about-wudiweber-team.webp"
                 alt=""
                 className="shadow-xl hover:shadow-2xl"
               />

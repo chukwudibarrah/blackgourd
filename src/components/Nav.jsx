@@ -27,7 +27,7 @@ export default function Nav({ handleHideDrawer }) {
       >
         <NavLink to="/" reloadDocument>
           <img
-            src="/black-gourd.webp"
+            src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/black-gourd.webp"
             alt="Logo"
             className="h-16 lg:h-20 transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />

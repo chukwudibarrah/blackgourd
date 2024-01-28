@@ -71,7 +71,7 @@ export default function Services() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            src="https://raw.githubusercontent.com/chukwudibarrah/monggoose/main/public/wudiweber-services.webp"
+            src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/wudiweber-services.webp"
             alt="team image"
             className="shadow-xl hover:shadow-2xl"
           />

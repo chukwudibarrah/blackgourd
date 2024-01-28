@@ -8,7 +8,7 @@ export default function Footer() {
       </div>
       <div className="">
         <img
-          src="/wudi-weber-footer.webp"
+          src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/wudi-weber-footer.webp"
           alt="footer image"
           className="my-10 px-4 md:px-8"
         />
@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 px-4 lg:px-8">
           <NavLink reloadDocument to="/">
           <img
-            src="/black-gourd.webp"
+            src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/black-gourd.webp"
             alt="Logo"
             className="transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />
