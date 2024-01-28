@@ -30,7 +30,7 @@ export default function About() {
     <ScrollerMotion className="bg-cosmiclatte">
       <main className="bg-cosmiclatte">
         {/* start sections */}
-        <section className="h-screen w-screen bg-aboutMobile md:bg-aboutImage bg-center bg-no-repeat">
+        <section className="h-screen w-screen bg-mobile md:bg-tab xl:bg-desktop bg-center bg-no-repeat">
           <div className="h-full w-full flex justify-start text-center items-center">
             <h1 className="font-vollkorn font-black text-gunmetal text-5xl md:text-9xl xl:px-64 md:px-8 px-4">
               We deliver unique digital solutions.
