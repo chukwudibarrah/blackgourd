@@ -20,10 +20,10 @@ export default function Contact() {
         <span className="font-bold">Location:</span> <br />South Yorkshire, <br /> United Kingdom
         </p>
         <p>
-        <span className="font-bold">Email:</span> <br /> projects@monggoose.com
+        <span className="font-bold">Email:</span> <br /> projects@blackgourd.com
         </p>
         <p>
-          <span className="font-bold">Call:</span> <br /> 0123456789
+          <span className="font-bold">Call:</span> <br /> 01234567890
         </p>
       </div>
       <div className="xl:w-5/12 lg:w-8/12 px-5 border-2 border-crayola flex py-3">
