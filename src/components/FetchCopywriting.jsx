@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as contentful from "contentful";
+import { trackLinkClick } from "../utils/Analytics";
 
 export default function Dev() {
   const [projects, setProjects] = useState([]);
@@ -12,6 +13,12 @@ export default function Dev() {
     accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     previewAccessToken: import.meta.env.VITE_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
   });
+
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("Copywriting links");
+  };
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -47,6 +54,7 @@ export default function Dev() {
         {projects.map((project) => (
           <NavLink
             reloadDocument
+            onClick={handleLinkClick}
             key={project.sys.id}
             to={`/copywriting/${project.fields.slug}`}
             onMouseEnter={() =>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
+import { trackLinkClick } from "../utils/Analytics";
 
 export default function Drawer() {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -29,6 +30,7 @@ export default function Drawer() {
 
   function handleHideDrawer() {
     setShowDrawer(!showDrawer);
+    trackLinkClick("Drawer or nav link clicked");
   }
 
   return (

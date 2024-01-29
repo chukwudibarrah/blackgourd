@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { trackLinkClick } from "../utils/Analytics";
 
 export default function Footer() {
+
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("Footer links");
+  };
+
+
   return (
     <footer className="font-montserrat md:text-2xl bg-cosmiclatte">
       <div className=" px-4 md:px-8 md:py-10">
@@ -18,7 +27,7 @@ export default function Footer() {
       </div>
       <div className="grid lg:grid-cols-3 xl:grid-cols-5">
         <div className="border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 px-4 lg:px-8">
-          <NavLink reloadDocument to="/">
+          <NavLink reloadDocument to="/" onClick={handleLinkClick}>
           <img
             src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/black-gourd.webp"
             alt="Logo"
@@ -37,6 +46,7 @@ export default function Footer() {
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
             to="#"
+            onClick={handleLinkClick}
           >
             <span className="animate-decor">Instagram</span>
           </NavLink>
@@ -44,6 +54,7 @@ export default function Footer() {
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
             to="#"
+            onClick={handleLinkClick}
           >
             <span className="animate-decor">Facebook</span>
           </NavLink>
@@ -51,6 +62,7 @@ export default function Footer() {
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
             to="#"
+            onClick={handleLinkClick}
           >
             <span className="animate-decor">LinkedIn</span>
           </NavLink>

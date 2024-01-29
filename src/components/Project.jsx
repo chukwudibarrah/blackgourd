@@ -3,6 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import * as contentful from "contentful";
 import PropTypes from "prop-types";
 import { ScrollerMotion } from "scroller-motion";
+import { trackLinkClick } from "../utils/Analytics";
 
 export default function Project({ contentType }) {
   const { slug } = useParams();
@@ -15,6 +16,12 @@ export default function Project({ contentType }) {
     accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     previewAccessToken: import.meta.env.VITE_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
   });
+
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("Projects links");
+  };
 
   useEffect(() => {
     const fetchProject = async () => {
@@ -91,6 +98,7 @@ export default function Project({ contentType }) {
               <p>Date: {project.fields.date}</p>
               <NavLink
                 className="main-decor"
+                onClick={handleLinkClick}
                 to={project.fields.url}
                 target="_blank"
                 rel="noopener noreferrer"

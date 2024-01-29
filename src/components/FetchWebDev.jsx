@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import * as contentful from "contentful";
+import { trackLinkClick } from "../utils/Analytics";
 
 export default function FetchWebDev() {
   const [projects, setProjects] = useState([]);
@@ -12,6 +13,12 @@ export default function FetchWebDev() {
     accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     previewAccessToken: import.meta.env.VITE_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
   });
+
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("WebDev links");
+  };
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -47,6 +54,7 @@ export default function FetchWebDev() {
         {projects.map((project) => (
           <NavLink
             reloadDocument
+            onClick={handleLinkClick}
             key={project.sys.id}
             to={`/webdevelopment/${project.fields.slug}`}
             onMouseEnter={() =>

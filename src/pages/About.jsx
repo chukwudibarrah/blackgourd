@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { ScrollerMotion } from "scroller-motion";
+import { trackLinkClick } from "../utils/Analytics";
 
 const link = (
   <svg
@@ -26,6 +27,12 @@ const linkMotionVariant = {
 };
 
 export default function About() {
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("About page links");
+  };
+
   return (
     <ScrollerMotion className="bg-cosmiclatte">
       <main className="bg-cosmiclatte">
@@ -46,8 +53,8 @@ export default function About() {
           <div className="grid xl:grid-cols-2 gap-10 md:px-8 px-4 py-20 xl:py-52">
             <div className="flex flex-col justify-between">
               <h2 className="font-sourcecode font-light text-xl text-gunmetal md:text-4xl xl:pr-32">
-                <span className="text-crayola font-semibold">Black Gourd</span> is
-                a global multidisciplinary digital agency based in South
+                <span className="text-crayola font-semibold">Black Gourd</span>{" "}
+                is a global multidisciplinary digital agency based in South
                 Yorkshire, United Kingdom. We help you develop ideal solutions
                 to optimise your business and customer needs, creating
                 digital-first web platforms that align brand and product.
@@ -131,6 +138,7 @@ export default function About() {
               reloadDocument
               to="/services"
               className="bg-gunmetal flex xl:flex-col justify-center items-center pump-feldgrau transition-all duration-1000"
+              onClick={handleLinkClick}
             >
               <span className="px-8 font-vollkorn font-black text-engviolet text-4xl lg:text-7xl z-20">
                 Services
@@ -141,6 +149,7 @@ export default function About() {
               reloadDocument
               to="/contact"
               className="bg-crayola flex xl:flex-col justify-center items-center pump-cosmic"
+              onClick={handleLinkClick}
             >
               <span className="px-8 font-vollkorn font-black text-gunmetal text-4xl lg:text-7xl z-20">
                 Contact us
@@ -150,6 +159,6 @@ export default function About() {
           </div>
         </section>
       </main>
-      </ScrollerMotion>
+    </ScrollerMotion>
   );
 }

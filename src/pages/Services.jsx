@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ArrowSide from "../components/ArrowSide";
 import { ScrollerMotion } from "scroller-motion";
+import { trackLinkClick } from "../utils/Analytics";
 
 // const tick = ("test")
 
@@ -16,6 +17,14 @@ export default function Services() {
     accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
     previewAccessToken: import.meta.env.VITE_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
   });
+
+  // Track GA4 link clicks
+
+  const handleLinkClick = () => {
+    trackLinkClick("Services contact button");
+  };
+
+
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -143,6 +152,7 @@ export default function Services() {
               reloadDocument
               to="/contact"
               className="p-2 font-sourcecode text-xl w-[9rem] text-crayola rounded-full hover:border-crayola hover:border-2 border-2 border-crayola hover:text-cosmiclatte hover:bg-crayola transition-all duration-1000"
+              onClick={handleLinkClick}
             >
               <span className="">Contact us</span>
             </NavLink>
