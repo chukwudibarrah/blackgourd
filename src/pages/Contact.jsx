@@ -18,12 +18,13 @@ export default function Contact() {
           <span className="font-bold">Location:</span> <br />
           South Yorkshire, <br /> United Kingdom
         </p>
-        <p>
+        <p className="group main-decor">
           <span className="font-bold">Email:</span> <br />{" "}
-          projects@blackgourd.com
+          <span className="animate-decor"><a href="mailto:projects@blackgourd.com">projects@blackgourd.com</a></span>
         </p>
-        <p>
-          <span className="font-bold">Call:</span> <br /> 01234567890
+        <p className="group main-decor">
+          <span className="font-bold">Call:</span> <br />{" "}
+          <span className="animate-decor"><a href="tel:07405841948">074-0584-1948</a></span>
         </p>
       </div>
       <div className="xl:w-5/12 lg:w-8/12 px-5 border-2 border-crayola flex py-3">
