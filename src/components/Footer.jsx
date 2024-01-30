@@ -41,7 +41,7 @@ export default function Footer() {
             Developing digital experiences
           </p>
         </div>
-        <div className="grid grid-cols-1 border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 uppercase px-4 lg:px-8 font-sourcecode text-gunmetal text-xs md:text-lg  group transition-all duration-300 ease-in-out">
+        <div className="grid grid-cols-1 border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 uppercase px-4 lg:px-8 font-sourcecode text-gunmetal text-xs md:text-lg">
           <NavLink
             reloadDocument
             className="my-3 group text-gunmetal main-decor"

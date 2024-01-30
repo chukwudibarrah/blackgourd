@@ -1,9 +1,7 @@
 import Form from "../components/Form";
-import { ScrollerMotion } from "scroller-motion";
 
 export default function Contact() {
   return (
-    <ScrollerMotion className="bg-cosmiclatte">
     <div className="pt-40 md:pt-80 pb-10 px-4 md:px-8 bg-cosmiclatte">
       <div>
         <h1 className="text-6xl md:text-9xl font-vollkorn font-black text-feldgrau">
@@ -17,10 +15,12 @@ export default function Contact() {
       </div>
       <div className="grid xl:grid-cols-3 gap-10 text-gunmetal font-sourcecode lg:text-xl text-lg py-20 select-none">
         <p>
-        <span className="font-bold">Location:</span> <br />South Yorkshire, <br /> United Kingdom
+          <span className="font-bold">Location:</span> <br />
+          South Yorkshire, <br /> United Kingdom
         </p>
         <p>
-        <span className="font-bold">Email:</span> <br /> projects@blackgourd.com
+          <span className="font-bold">Email:</span> <br />{" "}
+          projects@blackgourd.com
         </p>
         <p>
           <span className="font-bold">Call:</span> <br /> 01234567890
@@ -36,6 +36,5 @@ export default function Contact() {
         <Form />
       </div>
     </div>
-    </ScrollerMotion>
   );
 }

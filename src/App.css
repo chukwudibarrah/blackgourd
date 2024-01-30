@@ -120,7 +120,7 @@ body {
   height: 100px;
   align-content: space-around;
   gap: 20px;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   animation: infiniteScroll 20s linear infinite;
 }
 
@@ -129,8 +129,7 @@ body {
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  
+  background-position: center;  
 }
 
 .item1 {
@@ -161,3 +160,6 @@ body {
   background-image: url("https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/bsuk.png");
 }
 
+/* .item8 {
+  background-image: url("https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/bsuk.png");
+} */

@@ -3,7 +3,6 @@ import * as contentful from "contentful";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ArrowSide from "../components/ArrowSide";
-import { ScrollerMotion } from "scroller-motion";
 import { trackLinkClick } from "../utils/Analytics";
 
 // const tick = ("test")
@@ -23,8 +22,6 @@ export default function Services() {
   const handleLinkClick = () => {
     trackLinkClick("Services contact button");
   };
-
-
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -47,7 +44,6 @@ export default function Services() {
   }, [client, projects]);
 
   return (
-    <ScrollerMotion className="bg-cosmiclatte">
     <main className="py-40 md:pt-80 px-4 md:px-8 bg-cosmiclatte">
       {/* First section starts */}
       <section>
@@ -175,6 +171,5 @@ export default function Services() {
         </div>
       </section>
     </main>
-    </ScrollerMotion>
   );
 }

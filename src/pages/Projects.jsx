@@ -1,10 +1,8 @@
 import FetchWebDev from "../components/FetchWebDev";
 import FetchCopywriting from "../components/FetchCopywriting";
-import { ScrollerMotion } from "scroller-motion";
 
 export default function Projects() {
   return (
-    <ScrollerMotion className="bg-cosmiclatte">
     <div className="bg-cosmiclatte py-40 md:pt-80">
       <div className="">
         <h1 className="text-5xl md:text-8xl font-vollkorn text-gunmetal font-black px-4 md:px-8">
@@ -16,6 +14,5 @@ export default function Projects() {
         <FetchCopywriting />
       </div>
     </div>
-    </ScrollerMotion>
   );
 }

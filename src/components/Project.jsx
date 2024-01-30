@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import * as contentful from "contentful";
 import PropTypes from "prop-types";
-import { ScrollerMotion } from "scroller-motion";
 import { trackLinkClick } from "../utils/Analytics";
 
 export default function Project({ contentType }) {
@@ -75,7 +74,6 @@ export default function Project({ contentType }) {
   }
 
   return (
-    <ScrollerMotion className="bg-cosmiclatte">
       <div className="min-h-screen w-screen bg-cosmiclatte">
         <div className="py-40 md:pt-80 px-4 md:px-8">
           <div className="grid grid-cols-1 xl:grid-cols-2">
@@ -111,7 +109,6 @@ export default function Project({ contentType }) {
           </div>
         </div>
       </div>
-    </ScrollerMotion>
   );
 }
 
