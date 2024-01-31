@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 px-4 lg:px-8">
           <NavLink reloadDocument to="/" onClick={handleLinkClick}>
           <img
-            src="/blackgourd-light.webp"
+            src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/blackgourd-light.webp"
             alt="Logo"
             className="transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />
