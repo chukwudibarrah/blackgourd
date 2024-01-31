@@ -44,7 +44,7 @@ export default function Drawer() {
       >
         <NavLink to="/" reloadDocument>
           <img
-            src="/black-gourd.webp"
+            src="/blackgourd-light.webp"
             alt="Logo"
             className="h-16 lg:h-20 transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />

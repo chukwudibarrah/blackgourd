@@ -1,8 +1,10 @@
 import Form from "../components/Form";
+import FadeInSection from "../utils/FadeInSection";
 
 export default function Contact() {
   return (
     <div className="pt-40 md:pt-80 pb-10 px-4 md:px-8 bg-cosmiclatte">
+      <FadeInSection>
       <div>
         <h1 className="text-6xl md:text-9xl font-vollkorn font-black text-feldgrau">
           Get in touch
@@ -13,6 +15,8 @@ export default function Contact() {
           and strategies that&apos;ll make your online presence stand out.
         </p>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className="grid xl:grid-cols-3 gap-10 text-gunmetal font-sourcecode lg:text-xl text-lg py-20 select-none">
         <p>
           <span className="font-bold">Location:</span> <br />
@@ -27,15 +31,20 @@ export default function Contact() {
           <span className="animate-decor"><a href="tel:07405841948">074-0584-1948</a></span>
         </p>
       </div>
+      </FadeInSection>
+      <FadeInSection>
       <div className="xl:w-5/12 lg:w-8/12 px-5 border-2 border-crayola flex py-3">
         <p className="text-gunmetal font-sourcecode uppercase lg:text-xl text-lg">
           Call, send an email or use the form below:
         </p>
       </div>
+      </FadeInSection>
       <div className="flex justify-center"></div>
+      <FadeInSection>
       <div className="pt-40 pb-64 flex xl:w-6/12 text-2xl">
         <Form />
       </div>
+      </FadeInSection>
     </div>
   );
 }

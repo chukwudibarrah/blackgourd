@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import FadeInSection from "../utils/FadeInSection";
 import { trackLinkClick } from "../utils/Analytics";
 
 const link = (
@@ -35,6 +36,7 @@ export default function About() {
   return (
     <main className="bg-cosmiclatte">
       {/* start sections */}
+      
       <section className="h-screen w-screen bg-mobile md:bg-tab xl:bg-desktop bg-center bg-no-repeat">
         <div className="h-full w-full flex justify-start text-center items-center">
           <h1 className="font-vollkorn font-black text-gunmetal text-5xl md:text-9xl xl:px-64 md:px-8 px-4">
@@ -47,6 +49,7 @@ export default function About() {
       </section>
 
       {/* section break */}
+      <FadeInSection>
       <section className="">
         <div className="grid xl:grid-cols-2 gap-10 md:px-8 px-4 py-20 xl:py-52">
           <div className="flex flex-col justify-between">
@@ -76,8 +79,10 @@ export default function About() {
           </div>
         </div>
       </section>
+      </FadeInSection>
 
       {/* section break */}
+      <FadeInSection>
       <section>
         <div className="grid xl:grid-cols-2 gap-10 md:px-8 px-4 pb-10">
           <h3 className="font-montserrat text-2xl md:text-[40px] text-gunmetal xl:py-0 py-10">
@@ -99,8 +104,10 @@ export default function About() {
           <div className="horizontal-scrolling-items__item item7"></div>
         </div>
       </section>
+      </FadeInSection>
 
       {/* section break */}
+      <FadeInSection>
       <section>
         <div className="grid xl:grid-cols-2 gap-10 md:px-8 px-4 pb-20 pt-20 xl:pb-52">
           <div className="">
@@ -128,8 +135,10 @@ export default function About() {
           </div>
         </div>
       </section>
+      </FadeInSection>
 
       {/* section break */}
+      <FadeInSection>
       <section>
         <div className="grid xl:grid-cols-2 gap-5 md:px-8 px-4 h-96">
           <NavLink
@@ -156,6 +165,7 @@ export default function About() {
           </NavLink>
         </div>
       </section>
+      </FadeInSection>
     </main>
   );
 }

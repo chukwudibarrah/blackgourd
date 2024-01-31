@@ -3,6 +3,7 @@ import * as contentful from "contentful";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ArrowSide from "../components/ArrowSide";
+import FadeInSection from "../utils/FadeInSection";
 import { trackLinkClick } from "../utils/Analytics";
 
 // const tick = ("test")
@@ -46,6 +47,7 @@ export default function Services() {
   return (
     <main className="py-40 md:pt-80 px-4 md:px-8 bg-cosmiclatte">
       {/* First section starts */}
+      <FadeInSection>
       <section>
         <div>
           <h1 className="text-5xl md:text-8xl text-crayola font-vollkorn font-black">
@@ -68,8 +70,10 @@ export default function Services() {
           ))}
         </div>
       </section>
+      </FadeInSection>
 
       {/* New section starts */}
+      <FadeInSection>
       <section className="py-40">
         <div className="grid xl:grid-cols-2 gap-20">
           <motion.img
@@ -136,8 +140,10 @@ export default function Services() {
           </div>
         </div>
       </section>
+      </FadeInSection>
 
       {/* New section start */}
+      <FadeInSection>
       <section>
         <div className="grid xl:grid-cols-2 border-y-[0.5px] border-crayola">
           <div className="grid content-around">
@@ -153,6 +159,7 @@ export default function Services() {
               <span className="">Contact us</span>
             </NavLink>
           </div>
+          
 
           <div className="h-82 grid content-evenly xl:border-l-[0.5px] border-crayola font-sourcecode divide-y-[0.5px] divide-crayola text-xl text-gunmetal">
             <p className="py-10 xl:px-12">
@@ -170,6 +177,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      </FadeInSection>
     </main>
   );
 }

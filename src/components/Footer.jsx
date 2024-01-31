@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { trackLinkClick } from "../utils/Analytics";
+import FadeInSection from "../utils/FadeInSection";
 
 export default function Footer() {
 
@@ -15,6 +16,7 @@ export default function Footer() {
       <div className=" px-4 md:px-8 md:py-10">
         <hr className="border-2 border-crayola" />
       </div>
+      <FadeInSection>
       <div className="">
         <img
           src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/wudi-weber-footer.webp"
@@ -22,6 +24,7 @@ export default function Footer() {
           className="my-10 px-4 md:px-8"
         />
       </div>
+      </FadeInSection>
       <div className="w-screen">
         <hr className="border-crayola border-2" />
       </div>
@@ -29,7 +32,7 @@ export default function Footer() {
         <div className="border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 px-4 lg:px-8">
           <NavLink reloadDocument to="/" onClick={handleLinkClick}>
           <img
-            src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/black-gourd.webp"
+            src="/blackgourd-light.webp"
             alt="Logo"
             className="transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />

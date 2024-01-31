@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import * as contentful from "contentful";
 import PropTypes from "prop-types";
+import FadeInSection from "../utils/FadeInSection";
 import { trackLinkClick } from "../utils/Analytics";
 
 export default function Project({ contentType }) {
@@ -74,8 +75,9 @@ export default function Project({ contentType }) {
   }
 
   return (
-      <div className="min-h-screen w-screen bg-cosmiclatte">
-        <div className="py-40 md:pt-80 px-4 md:px-8">
+    <div className="min-h-screen w-screen bg-cosmiclatte">
+      <div className="py-40 md:pt-80 px-4 md:px-8">
+        <FadeInSection>
           <div className="grid grid-cols-1 xl:grid-cols-2">
             <img
               src={project.fields.featuredImage.fields.file.url}
@@ -87,6 +89,8 @@ export default function Project({ contentType }) {
               </h1>
             </div>
           </div>
+        </FadeInSection>
+        <FadeInSection>
           <div className="flex flex-col lg:flex-row font-sourcecode md:text-2xl md:leading-loose">
             <div className="lg:w-4/6 xl:pt-16 text-gunmetal">
               <p>{project.fields.description}</p>
@@ -107,8 +111,9 @@ export default function Project({ contentType }) {
               </NavLink>
             </div>
           </div>
-        </div>
+        </FadeInSection>
       </div>
+    </div>
   );
 }
 
