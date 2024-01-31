@@ -3,6 +3,7 @@ import * as contentful from "contentful";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import ArrowSide from "../components/ArrowSide";
+import SEO from "../utils/SEO";
 import FadeInSection from "../utils/FadeInSection";
 import { trackLinkClick } from "../utils/Analytics";
 
@@ -46,6 +47,12 @@ export default function Services() {
 
   return (
     <main className="py-40 md:pt-80 px-4 md:px-8 bg-cosmiclatte">
+      <SEO
+        title="What we do - Black Gourd"
+        description="We help you and your brand connect better with your audience by carefully choosing styles that send a strong message. And we create cool stuff that's both creative and practical ensuring you get great results."
+        name="Black Gourd"
+        type="page"
+      />
       {/* First section starts */}
       <FadeInSection>
       <section>

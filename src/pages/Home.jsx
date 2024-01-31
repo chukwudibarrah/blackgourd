@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Form from "../components/Form";
 import { NavLink } from "react-router-dom";
+import SEO from "../utils/SEO";
 import ArrowDown from "../components/ArrowDown";
 import { trackLinkClick } from "../utils/Analytics";
 
@@ -75,6 +76,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen w-screen overscroll-none overflow-hidden flex flex-col items-center justify-center bg-charcoal relative">
+      <SEO
+        title="Black Gourd"
+        description="We're a digital agency with more than a decade of experience in building and creating innovative websites and immersive copywriting that helps you stand out from all the digital niose."
+        name="Black Gourd"
+        type="page"
+      />
       {/* First section */}
       <section
         className={`h-screen bg-feldgrau w-full relative ${

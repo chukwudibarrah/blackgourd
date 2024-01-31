@@ -1,9 +1,17 @@
-// eslint-disable-next-line
+// main.jsx
 import * as React from 'react';
 import { useEffect } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import App from './App.jsx';
+import HelmetWrapper from './utils/HelmetProvider.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 import './index.css';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
@@ -14,6 +22,7 @@ import WebDev from './pages/WebDev.jsx';
 import Branding from './pages/Branding.jsx';
 import Copywriting from './pages/Copywriting.jsx';
 import Project from './components/Project.jsx';
+import ErrorBoundary from './components/ErrorBoundary.jsx'; // Adjust the path accordingly
 import ReactGA from 'react-ga4';
 
 ReactGA.initialize('G-K4WCJZLHHF');
@@ -34,7 +43,13 @@ window.addEventListener('unhandledrejection', function (event) {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <ErrorBoundary>
+        <HelmetWrapper>
+          <App />
+        </HelmetWrapper>
+      </ErrorBoundary>
+    ),
     children: [
       { path: '/', element: <Home /> },
       { path: '/about', element: <About /> },
@@ -47,6 +62,15 @@ const router = createBrowserRouter([
       { path: '/copywriting', element: <Copywriting /> },
       { path: '/copywriting/:slug', element: <Project contentType="editing" /> },
       { path: '/services', element: <Services /> },
+      {
+        path: '*',
+        element: <Routes>
+          <Route
+            path="*"
+            element={<ErrorPage />}
+          />
+        </Routes>,
+      },
     ],
   },
 ]);

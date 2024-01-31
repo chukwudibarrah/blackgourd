@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import * as contentful from "contentful";
 import PropTypes from "prop-types";
+import SEO from "../utils/SEO";
 import FadeInSection from "../utils/FadeInSection";
 import { trackLinkClick } from "../utils/Analytics";
 
@@ -90,6 +91,12 @@ export default function Project({ contentType }) {
             </div>
           </div>
         </FadeInSection>
+        <SEO
+          title={`${project.fields.projectName} - Black Gourd`}
+          description="Craft immersive messages and experiential websites with our copywriting, editing and web development expertise. From websites to marketing materials, we refine your digital presence for maximum impact, ensuring clear, concise and persuasive customer experiences."
+          name="Black Gourd"
+          type="page"
+        />
         <FadeInSection>
           <div className="flex flex-col lg:flex-row font-sourcecode md:text-2xl md:leading-loose">
             <div className="lg:w-4/6 xl:pt-16 text-gunmetal">

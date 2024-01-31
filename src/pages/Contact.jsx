@@ -1,9 +1,16 @@
 import Form from "../components/Form";
+import SEO from "../utils/SEO";
 import FadeInSection from "../utils/FadeInSection";
 
 export default function Contact() {
   return (
     <div className="pt-40 md:pt-80 pb-10 px-4 md:px-8 bg-cosmiclatte">
+      <SEO
+        title="Contact us - Black Gourd"
+        description="Got questions or ideas? Reach out! We're here to transform your digital dreams into reality. Let's chat about websites, designs, and strategies that'll make your online presence stand out."
+        name="Black Gourd"
+        type="page"
+      />
       <FadeInSection>
       <div>
         <h1 className="text-6xl md:text-9xl font-vollkorn font-black text-feldgrau">
