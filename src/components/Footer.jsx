@@ -48,7 +48,7 @@ export default function Footer() {
           <NavLink
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
-            to="#"
+            to="https://www.instagram.com/black.gourd/"
             onClick={handleLinkClick}
           >
             <span className="animate-decor">Instagram</span>
@@ -56,7 +56,7 @@ export default function Footer() {
           <NavLink
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
-            to="#"
+            to="https://www.facebook.com/blackgourd"
             onClick={handleLinkClick}
           >
             <span className="animate-decor">Facebook</span>
@@ -64,7 +64,7 @@ export default function Footer() {
           <NavLink
             reloadDocument
             className="my-3 group text-gunmetal main-decor"
-            to="#"
+            to="https://www.linkedin.com/company/blackgourd/"
             onClick={handleLinkClick}
           >
             <span className="animate-decor">LinkedIn</span>

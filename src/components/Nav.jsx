@@ -115,21 +115,21 @@ export default function Nav({ handleHideDrawer }) {
           <div className="flex font-sourcecode font-normal justify-evenly mt-10 md:mt-20 w-screen uppercase">
             <NavLink
               className="my-3 group text-charcoal main-decor"
-              to="#"
+              to="https://www.instagram.com/black.gourd/"
               reloadDocument
             >
               <span className="animate-decor">Instagram</span>
             </NavLink>
             <NavLink
               className="my-3 group text-charcoal main-decor"
-              to="#"
+              to="https://www.facebook.com/blackgourd"
               reloadDocument
             >
               <span className="animate-decor">Facebook</span>
             </NavLink>
             <NavLink
               className="my-3 group text-charcoal main-decor"
-              to="#"
+              to="https://www.linkedin.com/company/blackgourd/"
               reloadDocument
             >
               <span className="animate-decor">LinkedIn</span>
