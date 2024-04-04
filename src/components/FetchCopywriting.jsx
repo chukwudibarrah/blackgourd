@@ -16,7 +16,6 @@ export default function Dev() {
   });
 
   // Track GA4 link clicks
-
   const handleLinkClick = () => {
     trackLinkClick("Copywriting links");
   };
@@ -75,10 +74,9 @@ export default function Dev() {
       </FadeInSection>
       <FadeInSection>
         <div
+          className="hovered-image"
           style={{
-            backgroundImage: hoveredImageUrl
-              ? `url(${hoveredImageUrl})`
-              : "none",
+            backgroundImage: `url(${hoveredImageUrl})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             transition: "background-image 0.3s ease-in-out",

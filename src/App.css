@@ -163,3 +163,12 @@ body {
 /* .item8 {
   background-image: url("https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/bsuk.png");
 } */
+
+
+/* Mask logo SVG */
+
+.mask-svg {
+  -webkit-mask-image: url('/gourd.svg');
+  mask-image: url('/gourd.svg');
+  background: var(--gradient-background); /* Define your gradient here */
+}

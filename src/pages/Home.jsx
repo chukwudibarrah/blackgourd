@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import SEO from "../utils/SEO";
 import ArrowDown from "../components/ArrowDown";
 import { trackLinkClick } from "../utils/Analytics";
+import FadeInSection from "../utils/FadeInSection";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
@@ -88,14 +89,16 @@ export default function Home() {
           activeSection === 0 ? "active" : ""
         }`}
       >
-        <div className="grid justify-items-center text-center mt-28 md:mt-32 mb-0 md:mb-60">
-          <p className="w-9/12 lg:w-4/12 mb-3 font-sourcecode md:text-2xl text-cosmiclatte">
-            We&apos;re a digital agency with more than a decade of experience in
-            innovative development
-          </p>
-          {/* {arrow} */}
-          <ArrowDown />
-        </div>
+        <FadeInSection>
+          <div className="grid justify-items-center text-center mt-28 md:mt-32 mb-0 md:mb-60">
+            <p className="w-9/12 lg:w-4/12 mb-3 font-sourcecode md:text-2xl text-cosmiclatte">
+              We&apos;re a digital agency with more than a decade of experience
+              in innovative development
+            </p>
+            {/* {arrow} */}
+            <ArrowDown />
+          </div>
+        </FadeInSection>
         {activeSection === 0 && (
           <div className="h-full flex justify-center items-center text-center">
             <h2 className="text-5xl mb-11 md:text-8xl font-vollkorn font-extrabold fixed top-1/2 transform -translate-y-1/2">
@@ -111,11 +114,11 @@ export default function Home() {
               </span>
             </h2>
             <div className="">
-              <img
+              {/* <img
                 src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/webdev.webp"
                 alt="Web Development"
                 className="w-60 lg:w-[30rem] xl:w-[20rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-3xl"
-              />
+              /> */}
             </div>
           </div>
         )}
@@ -142,11 +145,11 @@ export default function Home() {
               </span>
             </h2>
             <div className="">
-              <img
+              {/* <img
                 src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/rediting.webp"
                 alt="Editing & Copywriting"
                 className="xl:w-[35rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2"
-              />
+              /> */}
             </div>
           </div>
         )}
@@ -159,7 +162,9 @@ export default function Home() {
             Send us a message
           </h2>
           <div className="flex justify-center my-10">
-            <Form />
+            <FadeInSection>
+              <Form />
+            </FadeInSection>
           </div>
         </div>
       </section>

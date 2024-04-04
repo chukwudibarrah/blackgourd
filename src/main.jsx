@@ -22,7 +22,7 @@ import WebDev from './pages/WebDev.jsx';
 import Branding from './pages/Branding.jsx';
 import Copywriting from './pages/Copywriting.jsx';
 import Project from './components/Project.jsx';
-import ErrorBoundary from './components/ErrorBoundary.jsx'; // Adjust the path accordingly
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 import ReactGA from 'react-ga4';
 
 ReactGA.initialize('G-K4WCJZLHHF');

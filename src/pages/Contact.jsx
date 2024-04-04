@@ -35,7 +35,7 @@ export default function Contact() {
         </p>
         <p className="group main-decor">
           <span className="font-bold">Call:</span> <br />{" "}
-          <span className="animate-decor"><a href="tel:07405841948">079-5548-0355</a></span>
+          <span className="animate-decor"><a href="tel:07955480355">079-5548-0355</a></span>
         </p>
       </div>
       </FadeInSection>

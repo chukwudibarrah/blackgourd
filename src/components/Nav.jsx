@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Nav({ handleHideDrawer }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,11 +27,12 @@ export default function Nav({ handleHideDrawer }) {
         onMouseLeave={handleMouseLeave}
       >
         <NavLink to="/" reloadDocument>
-          <img
+          <Logo />
+          {/* <img
             src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/blackgourd-alt-dark.webp"
             alt="Logo"
             className="h-16 lg:h-20 transition-transform duration-1000 ease-in-out transform hover:scale-105"
-          />
+          /> */}
         </NavLink>
       </div>
       <div>

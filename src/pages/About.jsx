@@ -44,6 +44,7 @@ export default function About() {
       />
       {/* start sections */}
 
+      <FadeInSection>
       <section className="h-screen w-screen bg-mobile md:bg-tab xl:bg-desktop bg-center bg-no-repeat">
         <div className="h-full w-full flex justify-start text-center items-center">
           <h1 className="font-vollkorn font-black text-gunmetal text-5xl md:text-9xl xl:px-64 md:px-8 px-4">
@@ -54,6 +55,7 @@ export default function About() {
           </h1>
         </div>
       </section>
+      </FadeInSection>
 
       {/* section break */}
       <FadeInSection>
