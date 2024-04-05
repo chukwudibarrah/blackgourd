@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Nav from "./Nav";
 import { trackLinkClick } from "../utils/Analytics";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 
 export default function Drawer() {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -44,12 +44,12 @@ export default function Drawer() {
         onMouseLeave={handleMouseLeave}
       >
         <NavLink to="/" reloadDocument>
-          <Logo />
-          {/* <img
+          {/* <Logo /> */}
+          <img
             src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/blackgourd-light.webp"
             alt="Logo"
             className="h-16 lg:h-20 transition-transform duration-1000 ease-in-out transform hover:scale-105"
-          /> */}
+          />
         </NavLink>
       </div>
 

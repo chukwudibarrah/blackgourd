@@ -79,7 +79,7 @@ export default function Home() {
     <main className="min-h-screen w-screen overscroll-none overflow-hidden flex flex-col items-center justify-center bg-charcoal relative">
       <SEO
         title="Black Gourd"
-        description="We're a digital agency with more than a decade of experience in building and creating innovative websites and immersive copywriting that helps you stand out from all the digital niose."
+        description="We're a digital agency with more than a decade of experience in building and creating innovative websites and immersive copywriting that helps you stand out from all the digital noise."
         name="Black Gourd"
         type="page"
       />
@@ -106,7 +106,7 @@ export default function Home() {
                 <NavLink
                   reloadDocument
                   to="/webdevelopment"
-                  className="text-crayola"
+                  className="bg-clip-text text-transparent bg-[linear-gradient(to_right,#EF7B45,#BA7BA1,#F7F3E3,#EF7B45,#F7F3E3,#BA7BA1,#EF7B45)] bg-[length:200%_auto] animate-gradient"
                   onClick={handleLinkClick}
                 >
                   Web Development
@@ -117,7 +117,7 @@ export default function Home() {
               {/* <img
                 src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/webdev.webp"
                 alt="Web Development"
-                className="w-60 lg:w-[30rem] xl:w-[20rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-3xl"
+                className="w-60 md:w-[26rem] xl:w-[20rem] 2xl:w-[30rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-3xl"
               /> */}
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function Home() {
                 <NavLink
                   reloadDocument
                   to="/copywriting"
-                  className="text-engviolet drop-shadow-3xl"
+                  className="bg-clip-text text-transparent bg-[linear-gradient(to_right,#F7F3E3,#EF7B45,#F7F3E3,#F7F3E3,#F7F3E3,#EF7B45,#F7F3E3)] bg-[length:200%_auto] animate-gradient drop-shadow-4xl"
                   onClick={handleLinkClick}
                 >
                   Editing & Copywriting
@@ -148,7 +148,7 @@ export default function Home() {
               {/* <img
                 src="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/rediting.webp"
                 alt="Editing & Copywriting"
-                className="xl:w-[35rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2"
+                className="2xl:w-[35rem] z-0 fixed bottom-0 left-1/2 transform -translate-x-1/2"
               /> */}
             </div>
           </div>

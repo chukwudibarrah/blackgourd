@@ -5,65 +5,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        'gradient': 'gradient ease-in-out linear infinite',
+        'gradient': 'gradient 8s linear infinite',
       },
       keyframes: {
         'gradient': {
-          '0%, 100%': {
-            '--color-start': '#ba7ba1',
-            '--color-mid': '#ba7ba1',  
-            '--color-end': '#ba7ba1',
-          },
-          '10%': {
-            '--color-start': '#ba7ba1',
-            '--color-mid': '#ba7ba1',  
-            '--color-end': '#7e7ea3',
-          },
-          '20%': {
-            '--color-start': '#7e7ea3',
-            '--color-mid': '#7e7ea3',  
-            '--color-end': '#7e7ea3',
-          },
-          '30%': {
-            '--color-start': '#4281a4',
-            '--color-mid': '#4281a4',  
-            '--color-end': '#4281a4',
-          },
-          '40%': {
-            '--color-start': '#4281a4',
-            '--color-mid': '#4281a4',  
-            '--color-end': '#4281a4',
-          },
-          '50%': {
-            '--color-start': '#4281a4',
-            '--color-mid': '#4281a4',  
-            '--color-end': '#4281a4',
-          },
-          '60%': {
-            '--color-start': '#4281a4',
-            '--color-mid': '#9c7e73',  
-            '--color-end': '#FFC0CB',
-          },
-          '70%': {
-            '--color-start': '#9c7e73',
-            '--color-mid': '#9c7e73',  
-            '--color-end': '#ef7b45',
-          },
-          '80%': {
-            '--color-start': '#ef7b45',
-            '--color-mid': '#ef7b45',  
-            '--color-end': '#ef7b45',
-          },
-          '90%': {
-            '--color-start': '#ef7b45',
-            '--color-mid': '#ef7b45',  
-            '--color-end': '#7e7ea3',
-          },
-          '100%': {
-            '--color-start': '#7e7ea3',
-            '--color-mid': '#7e7ea3',  
-            '--color-end': '#7e7ea3',
-          },
+          to: { 'background-position': '200% center' },
         },
       },
       colors: {
