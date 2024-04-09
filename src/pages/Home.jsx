@@ -90,8 +90,8 @@ export default function Home() {
         }`}
       >
         <FadeInSection>
-          <div className="grid justify-items-center text-center mt-28 md:mt-32 mb-0 md:mb-60">
-            <p className="w-9/12 lg:w-4/12 mb-3 font-sourcecode md:text-2xl text-cosmiclatte">
+          <div className="grid justify-items-center text-center mt-28 sm:mt-32 pb-20 md:mb-60">
+            <p className="w-9/12 lg:w-4/12 mb-3 font-sourcecode md:text-2xl text-cosmiclatte text-pretty">
               We&apos;re a digital agency with more than a decade of experience
               in innovative development
             </p>

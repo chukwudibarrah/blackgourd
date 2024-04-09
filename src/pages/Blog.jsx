@@ -42,14 +42,13 @@ export default function Blog() {
     <div className="min-h-screen w-screen overscroll-none bg-charcoal">
       <SEO
         title="Blog | Black Gourd"
-        description="I write and share my some of my more civil thoughts and experiences."
+        description="We're a digital agency with more than a decade of experience in building and creating innovative websites and immersive copywriting that helps you stand out from all the digital noise."
         name="@blackgourd"
         type="website"
-        // Include a generic image URL or maybe the featured image of the most recent post
-        imageUrl="https://example.com/path/to/your/default/journal-image.jpg"
-        url="https://chukwudibarrah.com/journal"
+        imageUrl="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/blackgourdblog.webp"
+        url="https://blackgourd.com/blog"
       />
-      <div className="grid lg:grid-cols-3 gap-10 font-outfit py-32 justify-items-center cursor-pointer md:mx-28 mx-4">
+      <div className="grid lg:grid-cols-3 gap-10 py-44 justify-items-center cursor-pointer md:mx-28 mx-4">
         {posts.map((post) => (
           <NavLink
             reloadDocument
@@ -64,7 +63,7 @@ export default function Blog() {
                 className="hover:scale-95 transition-all duration-700"
               />
             )}
-            <h3 className="text-gray-200 text-2xl md:text-4xl tracking-wide font-outfit my-5">
+            <h3 className="text-gunmetal text-2xl md:text-4xl tracking-wide font-vollkorn my-5 text-pretty">
               {post.fields.title}
             </h3>
           </NavLink>

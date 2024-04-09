@@ -18,7 +18,7 @@ function Layout() {
           description="Black Gourd is a global multidisciplinary digital agency based in the United Kingdom. We create digital-first web platforms and content that align brand and product."
           name="@blackgourd"
           type="website"
-          imageUrl="https://example.com/default-image.jpg"
+          imageUrl="https://raw.githubusercontent.com/chukwudibarrah/blackgourd/main/public/blackgourd.webp"
           url="https://blackgourd.com"
         />
       <Drawer />
