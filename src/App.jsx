@@ -1,9 +1,10 @@
 import "./App.css";
 import Drawer from "./components/Drawer";
 import Footer from "./components/Footer";
+import SEO from "./utils/SEO";
 import { Outlet, useLocation } from "react-router-dom";
 
-function App() {
+function Layout() {
   // Get the current location (route)
   const location = useLocation();
 
@@ -12,15 +13,19 @@ function App() {
 
   return (
     <>
+      <SEO
+          title="Black Gourd"
+          description="Black Gourd is a global multidisciplinary digital agency based in the United Kingdom. We create digital-first web platforms and content that align brand and product."
+          name="@blackgourd"
+          type="website"
+          imageUrl="https://example.com/default-image.jpg"
+          url="https://blackgourd.com"
+        />
       <Drawer />
-      
-      {/* Always render the Outlet, which represents the content of the current route */}
-      <Outlet />
-
-      {/* Always render the Footer on all pages except the home page */}
+      <Outlet /> {/* This replaces the specific route components with a placeholder for the matched route */}
       {!isHomePage && <Footer />}
     </>
   );
 }
 
-export default App;
+export default Layout;
