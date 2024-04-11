@@ -19,7 +19,7 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.hasError) {
-      // Render your custom error page here
+
       return (
         <div className="h-screen w-screen overscroll-none flex flex-col items-center justify-center bg-cosmiclatte text-gunmetal">
             <SEO

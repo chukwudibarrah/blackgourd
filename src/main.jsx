@@ -27,7 +27,7 @@ import Blogpost from "./pages/BlogPost.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-K4WCJZLHHF");
+ReactGA.initialize("G-FZ99KTS7XE");
 
 export const usePageTracking = () => {
   const location = useLocation();
