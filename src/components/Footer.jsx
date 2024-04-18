@@ -36,7 +36,7 @@ export default function Footer() {
             alt="Logo"
             className="transition-transform duration-1000 ease-in-out transform hover:scale-105"
           />
-            <p className="uppercase font-sourcecode text-xs md:text-sm text-gunmetal">
+            <p className="mt-5 uppercase font-sourcecode text-xs md:text-sm text-gunmetal">
               creative collective
             </p>
           </NavLink>
@@ -44,10 +44,10 @@ export default function Footer() {
             Developing digital experiences
           </p>
         </div>
-        <div className="grid grid-cols-1 border-crayola lg:border-r-2 border-b-2 lg:border-b-0 lg:py-16 py-8 uppercase px-4 lg:px-8 font-sourcecode text-gunmetal text-xs md:text-lg">
+        <div className="flex flex-col py-14 border-crayola lg:border-r-2 border-b-2 lg:border-b-0 uppercase px-4 lg:px-8 font-sourcecode text-gunmetal text-xs md:text-lg space-y-10">
           <NavLink
             reloadDocument
-            className="my-3 group text-gunmetal main-decor"
+            className="group text-gunmetal main-decor"
             to="https://www.instagram.com/black.gourd/"
             onClick={handleLinkClick}
           >
@@ -55,7 +55,7 @@ export default function Footer() {
           </NavLink>
           <NavLink
             reloadDocument
-            className="my-3 group text-gunmetal main-decor"
+            className="group text-gunmetal main-decor"
             to="https://www.facebook.com/blackgourd"
             onClick={handleLinkClick}
           >
@@ -63,19 +63,26 @@ export default function Footer() {
           </NavLink>
           <NavLink
             reloadDocument
-            className="my-3 group text-gunmetal main-decor"
+            className="group text-gunmetal main-decor"
             to="https://www.linkedin.com/company/blackgourd/"
             onClick={handleLinkClick}
           >
             <span className="animate-decor">LinkedIn</span>
           </NavLink>
         </div>
+        <div className="flex flex-col">
         <div className="lg:py-16 py-8 px-4 text-gunmetal lg:px-8 font-sourcecode text-xs md:text-lg">
           <p>
             © 2024 Black Gourd Creative Collective.
             <br />
             All rights reserved.
           </p>
+        </div>
+        <div className="px-4 lg:px-8 text-gunmetal font-sourcecode text-xs md:text-lg mb-10">
+        <p>
+          Black Gourd is a trading name of Korrp Limited, registered in England (company number: 15431743) and regulated by the Financial Conduct Authority.
+          </p>
+        </div>
         </div>
       </div>
     </footer>
